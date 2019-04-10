@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "jsoneditor": "^5.32.3",
     "vue": "^2.6.6",
     "vue-router": "^3.0.1",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "xlsx": "^0.14.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.5.0",
