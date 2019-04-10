@@ -1,6 +1,6 @@
 module.exports = {
   outputDir: 'docs',
-  publicPath: '/',
+  publicPath: './',
   productionSourceMap: false,
   devServer: {
     port: 9898,
