@@ -1,4 +1,5 @@
 import Home from '@/views/Home.vue';
+import XLSX from '@/views/xlsx';
 export default [
   {
     path: '/',
@@ -14,6 +15,6 @@ export default [
     meta: {
       title: '使用js-xlsx库来解析Excel文件',
     },
-    component: () => import('@/views/xlsx'),
+    component: XLSX,
   },
 ];

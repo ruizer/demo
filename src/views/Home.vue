@@ -24,10 +24,13 @@ export default {
 </script>
 <style lang="less">
 .home {
-  padding-top: 100px;
+  padding-top: 50px;
+  position: relative;
   ul {
     display: inline-block;
-    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     cursor: pointer;
     li {
       font-family: 微软雅黑;
