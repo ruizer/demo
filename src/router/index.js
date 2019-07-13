@@ -6,4 +6,9 @@ Vue.use(Router);
 const router = new Router({
   routes,
 });
+
+router.afterEach(to => {
+  document.title = (to.meta && to.meta.title) || 'demo';
+});
+
 export default router;
