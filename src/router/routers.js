@@ -34,4 +34,12 @@ export default [
     },
     component: () => import('@/views/post-message-test'),
   },
+  {
+    path: '/table-drag',
+    name: 'table-drag',
+    meta: {
+      title: '表格列宽拖拽功能',
+    },
+    component: () => import('@/views/table-drag'),
+  },
 ];
