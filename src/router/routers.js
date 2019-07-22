@@ -1,5 +1,7 @@
 import Home from '@/views/Home.vue';
 import XLSX from '@/views/xlsx';
+import { makeGithubLink } from '@/libs/util'
+
 export default [
   {
     path: '/',
@@ -15,8 +17,7 @@ export default [
     name: 'xlsx',
     meta: {
       title: '使用 js-xlsx 库来解析 Excel 文件',
-      github:
-        'https://github.com/ruizer/demo/blob/master/src/views/xlsx/index.vue',
+      github: makeGithubLink('xlsx'),
     },
     component: XLSX,
   },
@@ -25,8 +26,7 @@ export default [
     name: 'post-message',
     meta: {
       title: '跨源通信 postMessage 的骚操作',
-      github:
-        'https://github.com/ruizer/demo/blob/master/src/views/post-message/post-message.vue',
+      github: makeGithubLink('post-message'),
     },
     component: () => import('@/views/post-message'),
   },
@@ -44,9 +44,17 @@ export default [
     name: 'table-drag',
     meta: {
       title: '表格列宽拖拽功能',
-      github:
-        'https://github.com/ruizer/demo/blob/master/src/views/table-drag/table-drag.vue',
+      github: makeGithubLink('table-drag'),
     },
     component: () => import('@/views/table-drag'),
+  },
+  {
+    path: '/print',
+    name: 'print',
+    meta: {
+      title: '浏览器打印功能 -- window.print',
+      github: makeGithubLink('print'),
+    },
+    component: () => import('@/views/print'),
   },
 ];

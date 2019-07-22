@@ -1,2 +1,2 @@
-import XLSX from './index.vue';
+import XLSX from './xlsx.vue';
 export default XLSX;
