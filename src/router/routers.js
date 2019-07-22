@@ -6,6 +6,7 @@ export default [
     name: 'home',
     component: Home,
     meta: {
+      github: 'https://github.com/ruizer/demo',
       hideInMenu: true,
     },
   },
@@ -14,6 +15,8 @@ export default [
     name: 'xlsx',
     meta: {
       title: '使用 js-xlsx 库来解析 Excel 文件',
+      github:
+        'https://github.com/ruizer/demo/blob/master/src/views/xlsx/index.vue',
     },
     component: XLSX,
   },
@@ -22,6 +25,8 @@ export default [
     name: 'post-message',
     meta: {
       title: '跨源通信 postMessage 的骚操作',
+      github:
+        'https://github.com/ruizer/demo/blob/master/src/views/post-message/post-message.vue',
     },
     component: () => import('@/views/post-message'),
   },
@@ -39,6 +44,8 @@ export default [
     name: 'table-drag',
     meta: {
       title: '表格列宽拖拽功能',
+      github:
+        'https://github.com/ruizer/demo/blob/master/src/views/table-drag/table-drag.vue',
     },
     component: () => import('@/views/table-drag'),
   },
